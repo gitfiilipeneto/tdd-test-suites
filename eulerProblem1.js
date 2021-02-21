@@ -3,7 +3,7 @@
 //Find the sum of all the multiples of 3 or 5 below 1000.
 
 //testar %3==0??
-// testar os outputs, no caso a variavel su,
+// testar os outputs, no caso a variavel sum é sempre obrigatoriamente maior que o input
 
 //testar !%5==0
 //testar %3==0 || %5==0

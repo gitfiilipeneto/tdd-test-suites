@@ -15,3 +15,7 @@ test('tests if results always been greater than input', () => {
     expect(multiples(num)).toBeGreaterThan(num)
 })
 
+test('should return an string to lower inputs(num<4) ', () => {
+
+
+})

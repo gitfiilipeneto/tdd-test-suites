@@ -13,21 +13,28 @@ const multiples = (num) => {
 
     let sum = 0
     let limit = num
-    for (let i = 0; i < limit; i++) {
+    
+    if(num <=4 ){
+        return "stop"
+    }else{
+        for (let i = 0; i < limit; i++) {
 
-        let multiplesOfThree = i % 3 === 0
-        let multiplesOffive = i % 5 === 0
-
-        let bothMultiples = multiplesOfThree && multiplesOfThree
-
-        if (bothMultiples || multiplesOfThree || multiplesOffive) {
-
-            sum = sum + i
-
+            let multiplesOfThree = i % 3 === 0
+            let multiplesOffive = i % 5 === 0
+    
+            let bothMultiples = multiplesOfThree && multiplesOfThree
+    
+            if (bothMultiples || multiplesOfThree || multiplesOffive) {
+    
+                sum = sum + i
+    
+            }
         }
+    
+        return sum
     }
+    
 
-    return sum
 }
 
 module.exports = multiples
